@@ -7,7 +7,7 @@
  * clean `C:\Users\%USERNAME%\AppData\Roaming\ghci`                    (Win7 / Vista)
  * use the Haskell Platform uninstaller
  * delete MinGHC from wherever you unpacked it
- * update your PATH variable and remove deleted paths
+ * update your PATH environment variable and remove deleted paths
 
 
 ## How to install Haskell on Windows (tested with Win7):
@@ -15,8 +15,10 @@
  * download latest release of [stack](https://github.com/commercialhaskell/stack/releases/tag/v0.1.5.0)
  * unpack into the folder of your choice - e.g `C:\Program Files\Haskell\`
  * rename the unpacked folder to `stack`
- * run in Powershell / Command Prompt / Git Bash (in the stack folder) `stack setup` - this can take some time
- * go to your environment variables and create/edit a PATH variable where you add the following line `C:\Program Files\Haskell\stack;C:\Users\Alex\AppData\Roaming\local\bin;`, or replace the first path with your unpacked stack folder
+ * start Powershell / Command Prompt / Git Bash in the stack folder
+ * execute `stack setup` - this can take some time
+ * add the unpacked destination to the PATH environment variable e.g `C:\Program Files\Haskell\stack;`
+ * add the executable destination to the PATH environemnt variable `C:\Users\%USERNAME%\AppData\Roaming\local\bin;`
 
 
 ## How to install Haskell on *nix systems:
