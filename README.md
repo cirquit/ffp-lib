@@ -15,7 +15,7 @@
  * download latest release of [stack](https://github.com/commercialhaskell/stack/releases/tag/v0.1.5.0)
  * unpack into the folder of your choice - e.g `C:\Program Files\Haskell\`
  * rename the unpacked folder to `stack`
- * run in Powershell / Command Prompt / Git Bash (in the stack folder) `stack build` - this can take some time
+ * run in Powershell / Command Prompt / Git Bash (in the stack folder) `stack setup` - this can take some time
  * go to your environment variables and create/edit a PATH variable where you add the following line `C:\Program Files\Haskell\stack;C:\Users\Alex\AppData\Roaming\local\bin;`, or replace the first path with your unpacked stack folder
 
 
