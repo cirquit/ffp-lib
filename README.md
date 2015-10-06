@@ -16,17 +16,32 @@
  * unpack into the folder of your choice - e.g `C:\Program Files\Haskell\`
  * rename the unpacked folder to `stack`
  * run in Powershell / Command Prompt / Git Bash (in the stack folder) `stack build` - this can take some time
- * go to your environment variables and create/edit a PATH variable where you add the following line - `C:\Program Files\Haskell\stack;` or your equivalent path where you unpacked stack, don't forget the `;` at the end
+ * go to your environment variables and create/edit a PATH variable where you add the following line `C:\Program Files\Haskell\stack;C:\Users\Alex\AppData\Roaming\local\bin;`, or replace the first path with your unpacked stack folder
+
 
 ## How to install Haskell on debian-basted unix systems:
 
- * [guide](https://github.com/commercialhaskell/stack/blob/master/doc/GUIDE.md)
+ * [official install guide](https://github.com/commercialhaskell/stack/blob/master/doc/GUIDE.md)
+
+##### Working on a Haskell project with others:
+
+ * try to use a style guide e.g [Chris Done's](https://github.com/chrisdone/haskell-style-guide)
+ * use a version control system e.g git / svn
+ * don't use tabs - **ever** (see editor preferences & style guide)
+ * use .cabal-files to track dependencies
+
 
 ##### Stack related information:
 
  * [First steps, from blank system to a haskell project](https://github.com/commercialhaskell/stack/blob/master/doc/GUIDE.md)
  * [FAQ](https://github.com/commercialhaskell/stack/blob/master/doc/faq.md)
  * [YAML-Config](https://github.com/commercialhaskell/stack/blob/master/doc/yaml_configuration.md)
+ * a list of useful commands used by stack
+   * `stack runghc` == `runhaskell / runghc`
+   * `stack install <pgkname>` == `cabal install <pgkname>`
+   * `stack build` == `cabal build`
+   * `stack ghci` == `ghci`
+ * [using yesod with stack](http://www.yesodweb.com/blog/2015/06/stack-support-yesod-devel)
 
 ##### Editor (first two are highly customizable + nice highlighting):
  
@@ -54,3 +69,4 @@
  * Powershell
    * `Win-Flag -> Search "Powershell"`
    * `Win-Flag -> Alle Programme -> Zubehör -> Windows Powershell`
+
