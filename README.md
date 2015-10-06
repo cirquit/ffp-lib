@@ -46,7 +46,7 @@
   hs-source-dirs:      src
   exposed-modules:     Lib
   build-depends:       base >= 4.7 && < 5
-                     , **my-library** ==0.1.0.0
+                     , my-library ==0.1.0.0
  ```
 
  * if you use a library that's not in scope in the lts-resolver, add it to the `extra-deps` flag in the `stack.yaml` file as such:
@@ -62,3 +62,4 @@
  * [Stack information](https://github.com/cirquit/ffp-lib/blob/master/stack-info.md)
  * [Tips for working on a project](https://github.com/cirquit/ffp-lib/blob/master/tips.md)
  * [Stack & Yesod](https://github.com/cirquit/ffp-lib/blob/master/stack-n-yesod.md)
+ * [Stack & GTK](https://github.com/cirquit/ffp-lib/blob/master/stack-n-gtk.md)
