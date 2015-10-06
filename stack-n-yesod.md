@@ -20,6 +20,10 @@ This doesn't work currently for yesod projects (tested with Win7):
  * `stack build` -> [link to stack overflow](http://stackoverflow.com/questions/31194891/haskell-stack-build-error-ghc-exe-could-not-execute)
 
 
-My own examples from the last course - [link](https://github.com/cirquit/quizlearner/tree/master/resources/src)
+### Examples
 
-For other examples / tutorials / the book - [link](http://www.yesodweb.com/)
+ * my own examples from the last course - [link](https://github.com/cirquit/quizlearner/tree/master/resources/src)
+ * for other examples / tutorials / the book - [link](http://www.yesodweb.com/)
+
+To run those minimal examples - `stack runghc <example.hs>`
+To add handler via Yesod - `stack exec yesod add-handler`
