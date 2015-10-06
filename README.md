@@ -22,7 +22,13 @@
 
  * [guide](https://github.com/commercialhaskell/stack/blob/master/doc/GUIDE.md)
 
-#### Editor (first two are highly customizable + nice highlighting):
+##### Stack related information:
+
+ * [First steps, from blank system to a haskell project](https://github.com/commercialhaskell/stack/blob/master/doc/GUIDE.md)
+ * [FAQ](https://github.com/commercialhaskell/stack/blob/master/doc/faq.md)
+ * [YAML-Config](https://github.com/commercialhaskell/stack/blob/master/doc/yaml_configuration.md)
+
+##### Editor (first two are highly customizable + nice highlighting):
  
  * [Sublime Text](http://www.sublimetext.com/3)
    * go to `Preferences -> Settings - User` and copy paste:
@@ -42,7 +48,7 @@
  * [or others](https://wiki.haskell.org/IDEs)
 
 
-#### Nice perks for working with Haskell on Windows:
+##### Nice perks for working with Haskell on Windows:
 
  * *nix like shell and git support - [Git4Win](https://git-for-windows.github.io/)
  * Powershell
