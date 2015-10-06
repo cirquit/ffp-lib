@@ -40,15 +40,12 @@
  * `stack test` runs the test-suite(s)
  * `stack exec <projectname>-exe` runs your local executable
  * if you use a library add it to the .cabal-file at the `build-depends` flag
- * if you use a library that's not in scope in the lts-build, add it to the `extra-deps` flag in the `stack.yaml` file
-   * ```
-     extra-deps:
-       - my-lib-name-0.1.0.0
-     ```
+ * if you use a library that's not in scope in the lts-build, add it to the `extra-deps` flag in the `stack.yaml` file as such:
  
-
-
-
+ ```
+ extra-deps:
+   - my-lib-name-0.1.0.0
+ ```
 
 ### Tips and Help
 
