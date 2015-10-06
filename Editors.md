@@ -13,7 +13,7 @@
  * [Notepad++](https://notepad-plus-plus.org/)
    * go to `Settings -> Preferences -> Tab Settings` and check `Replace by space` and modify `Tab size` to 2
    * if you are working with someone who is using a *nix-like system, go to `Settings -> Preferences -> New Document` and check `Format (Line ending)`to `UNIX/OSX`
- * vim - [nice plugin](https://github.com/lukerandall/haskellmode-vim)
+ * vim - [plugin](https://github.com/lukerandall/haskellmode-vim)
  * emacs
  * [or others](https://wiki.haskell.org/IDEs)
 

@@ -7,7 +7,7 @@
    * `stack runghc` ^= `runhaskell / runghc`
    * `stack install <pgkname>` ^= `cabal install <pgkname>`
    * `stack build` ^= `cabal build`
-   * `stack ghci` ^= `ghci`
+   * `stack ghci` ^= `ghci` 
    * `stack exec <executable>` ^= `./<executable>`
    * `stack test` ^= `cabal test`
  * [using yesod with stack](http://www.yesodweb.com/blog/2015/06/stack-support-yesod-devel)
