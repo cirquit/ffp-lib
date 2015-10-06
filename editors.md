@@ -6,12 +6,12 @@
      {
       "draw_white_space_all": "all",
       "font_size": 11,  
-      "tab_size": 2,
+      "tab_size": 4,
       "translate_tabs_to_spaces": true
      }
      ```
  * [Notepad++](https://notepad-plus-plus.org/)
-   * go to `Settings -> Preferences -> Tab Settings` and check `Replace by space` and modify `Tab size` to 2
+   * go to `Settings -> Preferences -> Tab Settings` and check `Replace by space` and modify `Tab size` to 4
    * if you are working with someone who is using a *nix-like system, go to `Settings -> Preferences -> New Document` and check `Format (Line ending)`to `UNIX/OSX`
  * vim - [plugin](https://github.com/lukerandall/haskellmode-vim)
  * emacs

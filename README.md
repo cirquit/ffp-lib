@@ -31,3 +31,4 @@
  * [Editors](https://github.com/cirquit/ffp-lib/blob/master/editors.md)
  * [Stack information](https://github.com/cirquit/ffp-lib/blob/master/stack-info.md)
  * [Tips for working on a project](https://github.com/cirquit/ffp-lib/blob/master/tips.md)
+ * [Stack & Yesod](https://github.com/cirquit/ffp-lib/blob/master/stack-n-yesod.md)
