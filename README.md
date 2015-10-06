@@ -43,7 +43,7 @@
  * if you use a library that's not in scope in the lts-build, add it to the `extra-deps` flag in the `stack.yaml` file
    * ```
      extra-deps:
-     - my-lib-name-0.1.0.0
+       - my-lib-name-0.1.0.0
      ```
  
 
