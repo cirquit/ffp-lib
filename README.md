@@ -19,7 +19,7 @@
  * go to your environment variables and create/edit a PATH variable where you add the following line `C:\Program Files\Haskell\stack;C:\Users\Alex\AppData\Roaming\local\bin;`, or replace the first path with your unpacked stack folder
 
 
-## How to install Haskell on debian-basted unix systems:
+## How to install Haskell on *nix systems:
 
  * [official install guide](https://github.com/commercialhaskell/stack/blob/master/doc/GUIDE.md)
 
@@ -37,10 +37,12 @@
  * [FAQ](https://github.com/commercialhaskell/stack/blob/master/doc/faq.md)
  * [YAML-Config](https://github.com/commercialhaskell/stack/blob/master/doc/yaml_configuration.md)
  * a list of useful commands used by stack
-   * `stack runghc` == `runhaskell / runghc`
-   * `stack install <pgkname>` == `cabal install <pgkname>`
-   * `stack build` == `cabal build`
-   * `stack ghci` == `ghci`
+   * `stack runghc` ^= `runhaskell / runghc`
+   * `stack install <pgkname>` ^= `cabal install <pgkname>`
+   * `stack build` ^= `cabal build`
+   * `stack ghci` ^= `ghci`
+   * `stack exec <executable>` ^= `./<executable>`
+   * `stack test` ^= `cabal test`
  * [using yesod with stack](http://www.yesodweb.com/blog/2015/06/stack-support-yesod-devel)
 
 ##### Editor (first two are highly customizable + nice highlighting):
