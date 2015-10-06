@@ -15,9 +15,14 @@
  * download latest release of [stack](https://github.com/commercialhaskell/stack/releases/tag/v0.1.5.0)
  * unpack into the folder of your choice - e.g `C:\Program Files\Haskell\`
  * rename the unpacked folder to `stack`
+ * run in Powershell / Command Prompt / Git Bash (in the stack folder) `stack build` - this can take some time
+ * go to your environment variables and create/edit a PATH variable where you add the following line - `C:\Program Files\Haskell\stack;` or your equivalent path where you unpacked stack, don't forget the `;` at the end
 
+## How to install Haskell on debian-basted unix systems:
 
-## Editor (first two are highly customizable + nice highlighting):
+ * [guide](https://github.com/commercialhaskell/stack/blob/master/doc/GUIDE.md)
+
+#### Editor (first two are highly customizable + nice highlighting):
  
  * [Sublime Text](http://www.sublimetext.com/3)
    * go to `Preferences -> Settings - User` and copy paste:
@@ -37,6 +42,9 @@
  * [or others](https://wiki.haskell.org/IDEs)
 
 
-### Nice perks for working with Haskell on Windows:
+#### Nice perks for working with Haskell on Windows:
 
  * *nix like shell and git support - [Git4Win](https://git-for-windows.github.io/)
+ * Powershell
+   * `Win-Flag -> Search "Powershell"`
+   * `Win-Flag -> Alle Programme -> Zubehör -> Windows Powershell`
