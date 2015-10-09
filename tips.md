@@ -11,3 +11,11 @@
  * Powershell
    * `Win-Flag -> Search "Powershell"` 
    * `Win-Flag -> Alle Programme -> Zubehör -> Windows Powershell`
+
+##### Workflow help
+
+ * multiple useful addons for Sublime / Vim / Emacs
+ * set your default browser search to DuckDuckGo, that way you can access both useful databases via a bang pattern
+   * `Ctrl + T` -> `!hayoo <haskell function / type>`
+   * `Ctrl + T` -> `!hoogle <haskell function / type>`
+   * also useful for anything else, e.g `!leo`, `!g`, `!yt`, `!wiki`...even `!synonym`

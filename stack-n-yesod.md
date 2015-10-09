@@ -15,7 +15,7 @@ If you want only the library:
  * `stack install yesod`
  * `stack runghc <some-yesod-file.hs>`
 
-This doesn't work currently for yesod projects (tested with Win7):
+This doesn't work under Win 7:
  
  * `stack build` -> [link to stack overflow](http://stackoverflow.com/questions/31194891/haskell-stack-build-error-ghc-exe-could-not-execute)
 
