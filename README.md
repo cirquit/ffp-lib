@@ -21,9 +21,20 @@
  * add the executable destination to the `PATH` environment variable `C:\Users\%USERNAME%\AppData\Roaming\local\bin;`
 
 
+## How to delete Haskell / Cabal on *nix systems (unfinished):
+
+ * I actually looked up all packages with ghc + haskell and removed them (obv. not the best way)
+   * `sudo apt-get purge ghc`
+   * `sudo apt-get purge haskell-platform`
+ * `sudo rm -rf ~/.cabal`
+ * `sudo rm -rf ~/.ghc`
+
 ## How to install Haskell on *nix systems:
 
  * [official install guide](https://github.com/commercialhaskell/stack/blob/master/doc/GUIDE.md)
+ * libtinfo missing? -> `sudo apt-get install libtinfo-dev`
+ * want to use ghc / ghci without stack? -> add `$HOME/.stack/programs/x86_64-linux/ghc-7.10.2/bin/` to your `PATH`
+ * want to use every executable without `stack exec <executable>`? -> add `$HOME/.local/bin` to your `PATH`
 
 ## How to start:
 
@@ -55,6 +66,7 @@
  extra-deps:
    - my-lib-name-0.1.0.0
  ```
+ * when in doubt or missing dependencies? `stack build` and read the error
 
 ### Tips and Help
 
