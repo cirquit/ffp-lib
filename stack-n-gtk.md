@@ -11,7 +11,7 @@
  * `sudo apt-get install libghc-gtk-dev` - install gtk
  * `stack new <projectname>`
  * `cd .. <projectname>`
- * edit the <projectname>.cabal
+ * edit the `<projectname>.cabal`
  ```
  executable <projectname>-exe
     hs-source-dirs:      app
@@ -38,14 +38,55 @@
   ```
   * `stack exec <projectname>-exe`
 
+#### Glade
 
-**Glade** needs
- * `glib >=0.12.5.0 && <0.13`
- * `gtk >=0.12.5.0 && <0.13`
-The next gtk-lib which is <0.13 is 0.12.5.7 and it needs
- * cairo: needed (>=0.12.5.3 && <0.13)
- * gio: needed (>=0.12.5 && <0.13)    
- * glib: needed (>=0.12.5.4 && <0.13) 
- * pango: needed (>=0.12.5.3 && <0.13)
+ * `sudo apt-get install glade` - install glade (worked only for gtk2 for me)
+ * [Tutorials](https://github.com/gtk2hs/gtk2hs/tree/master/docs/tutorial/Tutorial_Port/Example_Code) (without glade)
+ * There are no known tutorials for glade support (that I know of), BUT this rudimentary functionality should get you started
 
+#### Basic how-to (installed glade + gtk + gtk-library):
+
+ * stack new
+ * `cd <projectname>/app` and open `Main.hs`
+ * copy this
+  ```
+  module Main where
+  
+  import Graphics.UI.Gtk
+  import Graphics.UI.Gtk.Builder
+  
+  main :: IO ()
+  main = do
+     initGUI
+     builder <- builderNew
+     builderAddFromFile builder "frame.glade"
+     window <- builderGetObject builder castToWindow "window1"   
+     widgetShowAll window
+     onDestroy window mainQuit
+     mainGUI
+  ```
+ * copy `frame.glade` into the main directory of your project (next to the `.cabal`-file)
+   ```
+   <?xml version="1.0" encoding="UTF-8"?>
+   <interface>
+     <requires lib="gtk+" version="2.24"/>
+     <!-- interface-naming-policy project-wide -->
+     <object class="GtkWindow" id="window1">
+       <property name="can_focus">False</property>
+       <property name="title" translatable="yes">My first glade powered program</property>
+       <property name="default_width">250</property>
+       <property name="default_height">250</property>
+       <child>
+         <object class="GtkLabel" id="label1">
+           <property name="visible">True</property>
+           <property name="can_focus">False</property>
+           <property name="label" translatable="yes">Hello World - from Glade!</property>
+         </object>
+       </child>
+     </object>
+   </interface>
+   ```
+ * add `gtk` to your `<projectname.cabal` dependencies for the executable
+ * `stack build`
+ * `stack exec <projectname>-exe`
 
