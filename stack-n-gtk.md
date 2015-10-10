@@ -22,8 +22,7 @@
                        , gtk
     default-language:    Haskell2010
  ```
-  * `stack build`
-  * edit `app/Main`
+   * edit `app/Main`
   ```Haskell
   module Main where
 
@@ -36,6 +35,7 @@
      widgetShowAll window
      mainGUI
   ```
+  * `stack build`
   * `stack exec <projectname>-exe`
 
 #### Glade
