@@ -23,7 +23,7 @@
     default-language:    Haskell2010
  ```
   * `stack build`
-  * edit `bin/Main`
+  * edit `app/Main`
   ```Haskell
   module Main where
 
@@ -46,10 +46,12 @@
 
 #### Basic how-to (installed glade + gtk + gtk-library):
 
+(Main.hs and frame.glade are also uploaded in this repository)
+
  * stack new
  * `cd <projectname>/app` and open `Main.hs`
  * copy this
-  ```
+  ```Haskell
   module Main where
   
   import Graphics.UI.Gtk
@@ -66,7 +68,8 @@
      mainGUI
   ```
  * copy `frame.glade` into the main directory of your project (next to the `.cabal`-file)
-   ```
+
+   ```XML
    <?xml version="1.0" encoding="UTF-8"?>
    <interface>
      <requires lib="gtk+" version="2.24"/>
@@ -86,7 +89,10 @@
      </object>
    </interface>
    ```
+
  * add `gtk` to your `<projectname.cabal` dependencies for the executable
  * `stack build`
  * `stack exec <projectname>-exe`
+
+ 
 
