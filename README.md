@@ -33,7 +33,7 @@
 
  * [official install guide](https://github.com/commercialhaskell/stack/blob/master/doc/GUIDE.md)
  * libtinfo missing? -> `sudo apt-get install libtinfo-dev`
- * want to use ghc / ghci without stack? -> add `$HOME/.stack/programs/x86_64-linux/ghc-7.10.2/bin/` to your `PATH`
+ * want to use ghc / ghci without stack? -> add `$HOME/.stack/programs/x86_64-linux/ghc-<your-version>/bin/` to your `PATH`
  * want to use every executable without `stack exec <executable>`? -> add `$HOME/.local/bin` to your `PATH`
 
 ## How to start:
