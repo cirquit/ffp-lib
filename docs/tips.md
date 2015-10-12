@@ -9,7 +9,7 @@
 
  * *nix like shell and git support - [Git4Win](https://git-for-windows.github.io/)
  * Powershell
-   * `Win-Flag -> Search "Powershell"` 
+   * `Win-Flag -> Search "Powershell"`
    * `Win-Flag -> Alle Programme -> Zubehör -> Windows Powershell`
 
 ##### Workflow help
