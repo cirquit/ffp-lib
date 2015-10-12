@@ -27,7 +27,7 @@
   module Main where
 
   import Graphics.UI.Gtk
-   
+
   main :: IO ()
   main = do
      initGUI
@@ -36,6 +36,7 @@
      mainGUI
   ```
   * `stack build`
+  * libtinfo missing? -> `sudo apt-get install libtinfo-dev` and `stack build`
   * `stack exec <projectname>-exe`
 
 #### Glade
