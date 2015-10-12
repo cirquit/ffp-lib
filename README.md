@@ -1,4 +1,24 @@
-## How to delete Haskell / Cabal on Windows:
+# Docs
+
+ * Windows
+  * How to delete the Haskell toolchain
+  * How to install the Haskell toolchain
+ * *nix
+  * How to delete the Haskell toolchain
+  * How to install the Haskell toolchain
+ * First steps with stack
+ * Tips & Help
+  * Editors
+  * Stack information
+  * Tips for working on a project
+  * Stack & Yesod
+  * Stack & GTK
+  * Stack & FTLK
+
+
+# Windows
+
+### How to delete Haskell / Cabal on Windows:
 
  * clean `C:\Documents and Settings\%USERNAME%\Application Data\cabal` (XP)
  * clean `C:\Program Files\Haskell Platform\lib`                       (XP)
@@ -10,7 +30,7 @@
  * update your `PATH` environment variable and remove deleted paths
 
 
-## How to install Haskell on Windows (tested with Win7):
+### How to install Haskell on Windows (tested with Win7):
 
  * download latest release of [stack](https://github.com/commercialhaskell/stack/releases/tag/v0.1.5.0)
  * unpack into the folder of your choice - e.g `C:\Program Files\Haskell\`
@@ -20,14 +40,16 @@
  * add the unpacked destination to the `PATH` environment variable e.g `C:\Program Files\Haskell\stack;`
  * add the executable destination to the `PATH` environment variable `C:\Users\%USERNAME%\AppData\Roaming\local\bin;`
 
+# *nix
 
-## How to delete Haskell / Cabal on *nix systems (unfinished):
+## How to delete Haskell / Cabal on *nix systems:
 
  * I actually looked up all packages with ghc + haskell and removed them (obv. not the best way)
    * `sudo apt-get purge ghc`
    * `sudo apt-get purge haskell-platform`
  * `sudo rm -rf ~/.cabal`
  * `sudo rm -rf ~/.ghc`
+ * `sudo rm -rf ~/.stack`
 
 ## How to install Haskell on *nix systems:
 
