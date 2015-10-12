@@ -41,29 +41,29 @@
 
 #### Glade
 
- * `sudo apt-get install glade` - install glade (worked only for gtk2 for me)
+ * `sudo apt-get install glade-gnome` - install glade for GTK+ 2
  * [Tutorials](https://github.com/gtk2hs/gtk2hs/tree/master/docs/tutorial/Tutorial_Port/Example_Code) (without glade)
  * There are no known tutorials for glade support (that I know of), BUT this rudimentary functionality should get you started
 
 #### Basic how-to (installed glade + gtk + gtk-library):
 
-(Main.hs and frame.glade are also uploaded in this repository)
+(Main.hs and frame.glade are also uploaded in [this repository](https://github.com/cirquit/ffp-lib/blob/master/gtk-examples))
 
  * stack new
  * `cd <projectname>/app` and open `Main.hs`
  * copy this
   ```Haskell
   module Main where
-  
+
   import Graphics.UI.Gtk
   import Graphics.UI.Gtk.Builder
-  
+
   main :: IO ()
   main = do
      initGUI
      builder <- builderNew
      builderAddFromFile builder "frame.glade"
-     window <- builderGetObject builder castToWindow "window1"   
+     window <- builderGetObject builder castToWindow "window1"
      widgetShowAll window
      onDestroy window mainQuit
      mainGUI
@@ -90,10 +90,9 @@
      </object>
    </interface>
    ```
-
  * add `gtk` to your `<projectname.cabal` dependencies for the executable
  * `stack build`
  * `stack exec <projectname>-exe`
 
- 
+
 
