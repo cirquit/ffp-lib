@@ -33,10 +33,13 @@
      initGUI
      window <- windowNew
      widgetShowAll window
+     onDestroy window mainQuit
      mainGUI
   ```
+  * try `stack build`
+  * libtinfo missing? -> `sudo apt-get install libtinfo-dev`
+  * if it's installed but still not found, go to `/lib` and `/lib64` and create a link from `libtinfo.so.5` to `libtinfo.so` in the same directory
   * `stack build`
-  * libtinfo missing? -> `sudo apt-get install libtinfo-dev` and `stack build`
   * `stack exec <projectname>-exe`
 
 #### Glade
@@ -93,6 +96,3 @@
  * add `gtk` to your `<projectname.cabal` dependencies for the executable
  * `stack build`
  * `stack exec <projectname>-exe`
-
-
-

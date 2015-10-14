@@ -19,6 +19,9 @@ These are commands for multiple systems with differend previous state, you don't
  * unpack into the folder of your choice - e.g `C:\Program Files\Haskell\`
  * rename the unpacked folder to `stack`
  * start *Powershell* / *Command Prompt* / *Git Bash* / *MSys2* in the stack folder
- * execute `stack setup` - this can take some time
+ * execute `stack.exe setup` - this can take some time
  * add the unpacked destination to the `PATH` environment variable e.g `C:\Program Files\Haskell\stack;`
  * add the executable destination to the `PATH` environment variable `C:\Users\%USERNAME%\AppData\Roaming\local\bin;`
+ * add the `ghc / ghci` binary destination to the `PATH` environment variable `C:\Users\%USERNAME%\AppData\Local\Programs\stack\x86_64-windows\ghc-<your-ghc-version>\bin`
+
+Always exectue the stack commands with `stack.exe <-flags>`
