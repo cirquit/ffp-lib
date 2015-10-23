@@ -17,3 +17,14 @@ These commands are tested on a debian-based distribution (Linux Mint 17 Cinnamon
  * libtinfo missing? -> `sudo apt-get install libtinfo-dev`
  * want to use ghc / ghci without stack? -> add `$HOME/.stack/programs/x86_64-linux/ghc-<your-version>/bin/` to your `PATH`
  * want to use executables without `stack exec <executable>`? -> add `$HOME/.local/bin` to your `PATH`
+
+
+### How to install the Haskell toolchain on CIP computers at the LMU
+
+ * [download me](https://www.stackage.org/stack/linux-x86_64)
+ * extract somewhere (e.g `~/Software/`)
+ * rename the extracted folder to `stack`
+ * updated your `~/.zsrhc` (if you use zsh) or create a file `~/.bashrc_local` and add the following line to it
+   `export PATH=$PATH:$HOME/Software/stack`
+ * run `stack setup`
+ * you are good to go!
