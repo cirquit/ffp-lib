@@ -14,10 +14,10 @@ These commands are tested on a debian-based distribution (Linux Mint 17 Cinnamon
 ### How to install the Haskell toolchain:
 
  * [official install guide](https://github.com/commercialhaskell/stack/blob/master/doc/GUIDE.md)
- * libtinfo missing? -> `sudo apt-get install libtinfo-dev`
+ * libtinfo missing? -> `sudo apt-get install libtinfo-dev` or see below
+ * still missing? -> rename your libtinfo in `lib64` to `libtinfo.so` e.g `/lib64 # ln -s libtinfo.so.6 libtinfo.so`
  * want to use ghc / ghci without stack? -> add `$HOME/.stack/programs/x86_64-linux/ghc-<your-version>/bin/` to your `PATH`
  * want to use executables without `stack exec <executable>`? -> add `$HOME/.local/bin` to your `PATH`
-
 
 ### How to install the Haskell toolchain on CIP computers at the LMU
 
