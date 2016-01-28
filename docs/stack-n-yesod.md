@@ -22,7 +22,7 @@ This doesn't work under Win 7:
 
 ### Examples
 
- * my own examples from the last course - [link](https://github.com/cirquit/quizlearner/tree/master/resources/src)
+ * my own examples from the last course - [link](https://github.com/cirquit/quizlearner/tree/master/resources/)
  * for other examples / tutorials / the book - [link](http://www.yesodweb.com/)
 
  * To run those minimal examples - `stack runghc <example.hs>`
