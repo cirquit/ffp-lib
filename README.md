@@ -14,4 +14,4 @@
   * [Stack & Yesod](https://github.com/cirquit/ffp-lib/blob/master/docs/stack-n-yesod.md)
   * [Stack & GTK](https://github.com/cirquit/ffp-lib/blob/master/docs/stack-n-gtk.md)
   * [Alternative GUI-Lib - FTLK](http://hackage.haskell.org/package/fltkhs-0.1.0.1/docs/Graphics-UI-FLTK-LowLevel-FLTKHS.html)
-
+* [Official Docs](http://docs.haskellstack.org/en/stable/index.html)
