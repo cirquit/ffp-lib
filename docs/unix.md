@@ -1,4 +1,4 @@
-These commands are tested on a debian-based distribution (Linux Mint 17 Cinnamon 64-bit). Please rephrase the following commands for your distribution.
+These commands are tested on a debian-based distribution (Linux Mint 17 Cinnamon 64-bit / Ubuntu Mate 15.10). Please rephrase the following commands for your distribution.
 
 ### How to delete the Haskell toolchain:
 
@@ -10,6 +10,9 @@ These commands are tested on a debian-based distribution (Linux Mint 17 Cinnamon
  * `sudo rm -rf ~/.cabal`
  * `sudo rm -rf ~/.ghc`
  * `sudo rm -rf ~/.stack`
+
+### Mac OS?:
+ * [Scroll down to Mac OS X] https://github.com/commercialhaskell/stack/blob/master/doc/install_and_upgrade.md
 
 ### How to install the Haskell toolchain:
 
