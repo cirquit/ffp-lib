@@ -11,8 +11,9 @@ These commands are tested on a debian-based distribution (Linux Mint 17 Cinnamon
  * `sudo rm -rf ~/.ghc`
  * `sudo rm -rf ~/.stack`
 
-### Mac OS?:
- * [Scroll down to Mac OS X] https://github.com/commercialhaskell/stack/blob/master/doc/install_and_upgrade.md
+### Mac OS:
+
+ * [Scroll down to Mac OS X](https://github.com/commercialhaskell/stack/blob/master/doc/install_and_upgrade.md)
 
 ### How to install the Haskell toolchain:
 
